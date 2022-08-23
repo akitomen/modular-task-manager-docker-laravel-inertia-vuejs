@@ -1,0 +1,23 @@
+<template>
+    <input
+        @change="change"
+        v-model="modelValue"
+        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+        type="time"
+    />
+</template>
+
+<script>
+export default {
+    name: "TimeInput",
+    props: {
+        modelValue: String
+    },
+    emits: ['update:modelValue'],
+    methods: {
+        change(event) {
+            this.$emit('update:modelValue', event.target.value)
+        }
+    }
+}
+</script>

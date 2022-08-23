@@ -1,0 +1,30 @@
+{
+    "name": "nwidart/taskmanager",
+    "description": "",
+    "authors": [
+        {
+            "name": "Alexander Kvasa",
+            "email": "kvashaaleksandrs@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0.2",
+        "guzzlehttp/guzzle": "^7.2",
+        "inertiajs/inertia-laravel": "^0.5.2",
+        "laravel/sanctum": "^3.0",
+        "tightenco/ziggy": "^1.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\TaskManager\\": ""
+        }
+    }
+}
